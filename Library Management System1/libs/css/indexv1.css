@@ -1,0 +1,127 @@
+:root {
+    --offcanvas-width: 270px !important;
+    --topNavbarHeight: 56px !important;
+    --bs-gray-800: #1F2937;
+}
+
+body {
+    background-image: url("../../dipository/Admin/Themes/wallpaperflare.com_wallpaper(10).jpg");
+}
+
+.bg-gray-800 {
+    background-color: var(--bs-gray-800);
+}
+
+.sidebar-nav {
+    width: var(--offcanvas-width);
+}
+
+.sidebar-nav svg {
+    width: 30px;
+    height: auto;
+}
+
+.sidebar-nav .nav-link .sidebar-icon {
+    margin-right: .5rem;
+    color: #9ca3af
+}
+
+.sidebar .nav-item.active>.nav-link {
+    color: #f2f4f6;
+    background-color: #374151;
+}
+
+.sidebar-nav .card-img-top {
+    width: 80px;
+    height: 80px;
+}
+
+.sidebar-text {
+    color: white;
+}
+
+.notifications {
+    min-width: 350px;
+    border-radius: 1rem;
+}
+
+.notification-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.profiles-dropdown svg,
+.add-task svg {
+    width: 20px;
+    height: 20px;
+    color: gray;
+}
+
+.icon-primary-overview {
+    color: #1f2937;
+    background-color: rgba(31, 41, 55, .3);
+}
+
+.icon-secondary-overview {
+    color: #f0bc74;
+    background-color: rgba(240, 188, 116, .3);
+}
+
+.icon-tertiary-overview {
+    color: #31316a;
+    background-color: rgba(49, 49, 106, .3);
+}
+
+.overview svg {
+    width: 60px;
+    height: 60px;
+}
+
+.bg-orange-muted {
+    color: #1f2937;
+    background-color: #f2c689;
+    border-color: #f2c382;
+}
+
+.add-task-toggler:hover {
+    background-color: #eeb15d;
+    border-color: #eeb15d;
+}
+
+.overview .count {
+    font-size: 50px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media(max-width:767px) {
+    .sidebar-nav {
+        width: 100% !important;
+    }
+}
+
+@media(min-width:991.98px) {
+    body {
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+    .sidebar-nav {
+        transform: none !important;
+        visibility: visible !important;
+    }
+    .content {
+        margin-left: var(--offcanvas-width);
+    }
+}
+
+@media (max-width: 567px) {
+    .notifications {
+        right: 0;
+        left: auto;
+        transform: translateX(30%);
+    }
+}
